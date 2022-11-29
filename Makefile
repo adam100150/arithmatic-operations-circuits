@@ -8,6 +8,8 @@ four-bit-adder-tests:
 	@echo "---------------------------------------------"
 	vvp four-bit-adder-test.out +x=1000 +y=0001 +carry_in=1
 
+clean:
+	rm *.out
 
 help:
 	@echo "make four-bit-adder-tests  --  Test Four Bit Adder"
