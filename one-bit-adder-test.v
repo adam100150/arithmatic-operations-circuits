@@ -21,7 +21,7 @@ module one_bit_adder_test;
             $finish;
         end
 
-        $display("Expected %b + %b + %b = %b", a, b, cin, {a + b + cin});
+        $display("Expected: %b + %b + %b = %b", a, b, cin, {a + b + cin});
         #1 // let output propagate
         if ( {cout, s} == a + b + cin )
             $display("PASSED: sum=%b, carry_out=%b", s, cout);
