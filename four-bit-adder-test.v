@@ -1,9 +1,9 @@
 `include "four-bit-adder.v"
 module four_bit_adder_test;
-    reg [0:3]x;
-    reg [0:3]y;
+    reg [3:0]x;
+    reg [3:0]y;
     reg carry_in;
-    wire [0:3]sum;
+    wire [3:0]sum;
     wire carry_out;
     wire overflow;
     four_bit_adder adder(x, y, carry_in, sum, carry_out, overflow);
